@@ -1,0 +1,165 @@
+/* general searchbar styling */
+
+.searchBar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(./pictures/patrick-tomasso-GXXYkSwndP4-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 30rem;
+	margin-bottom: 60px;
+}
+
+.search h1 {
+	background-color: #e16162;
+	width: 100%;
+	margin: 0%;
+	padding: 5px;
+	font-family: "Mulish", serif;
+	letter-spacing: 8px;
+	font-weight: 900;
+	text-align: center;
+}
+
+/* location and search bussiness be side by side  */
+.input {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.sortOptions button {
+	padding: 10px 30px;
+	border-radius: 10px;
+	border: none;
+	margin: 40px;
+	cursor: pointer;
+	font-size: 25px;
+	color: #004643;
+	text-align: center;
+	font-family: "Oswald", serif;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.sortOptions {
+	padding-top: 30px;
+}
+.sortOptions button.active {
+	background-color: #f9bc60; /* Active button background color */
+	color: white; /* Active button text color */
+	border: 2px solid #004643; /* Active button border color */
+	font-weight: bold; /* Bold text for active button */
+}
+
+/* adding hover effect */
+.sortOptions button:hover {
+	background-color: rgba(255, 243, 204, 0.8);
+}
+
+/* adding hover active */
+.sortOptions button:active {
+	color: #f3dcdc;
+	background-color: #f9bc60;
+	border: 2px solid #004643;
+}
+
+/* search bar styling */
+.searchBar input {
+	margin: 18px;
+	padding-right: 30px;
+	width: 300px;
+	height: 40px;
+	border-radius: 3px;
+	border: 2px solid #abd1c6;
+	font-size: 15px;
+	font-family: "Mulish";
+}
+
+.searchBar input:focus {
+	border-color: #abd1c6;
+	color: #004643;
+}
+.searchBar input::placeholder {
+	color: #004643;
+	padding: 5px;
+}
+
+.searchBar input:focus::placeholder {
+	color: #004643;
+}
+
+.button {
+	background-color: #f9bc60;
+	border: none;
+	border-radius: 3px;
+	font-size: 25px;
+	color: #004643;
+	padding: 6px;
+	width: 150px;
+	box-shadow: 2px 5px;
+	font-family: "Oswald";
+	letter-spacing: 2px;
+	font-weight: 800;
+}
+
+.button:hover {
+	background-color: rgba(255, 243, 204, 0.8);
+}
+
+.button:active {
+	color: #e16162;
+}
+
+/* Responsive for different screens
+Mobile size */
+@media (min-width: 320px) and (max-width: 480px) {
+	.sortOptions button {
+		display: flex;
+		margin: 15px 0 0 25px;
+		font-size: 15px;
+		text-align: center;
+		font-family: "Oswald", serif;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+	.sortOptions {
+		padding-top: 15px;
+	}
+	.input {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+}
+
+@media (min-width: 320px) {
+	.searchBar input {
+		width: 240px;
+	}
+}
+
+@media (min-width: 375px) {
+	.searchBar input {
+		width: 260px;
+	}
+}
+
+/* Responsive for different screens
+Table size */
+@media (min-width: 481px) and (max-width: 768px) {
+	.sortOptions button {
+		margin: 15px 0 40px 25px;
+		font-size: 20px;
+		text-align: center;
+		font-family: "Oswald", serif;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+
+	.sortOptions {
+		padding-top: 10px;
+		margin-top: 40px;
+	}
+}

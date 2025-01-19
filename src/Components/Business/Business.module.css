@@ -1,0 +1,117 @@
+.business {
+	background-color: #abd1c6;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	border-radius: 8px;
+	position: relative;
+	margin-top: 10px;
+	font-family: "Brawler";
+}
+
+.business img {
+	width: 15rem;
+	height: 10rem;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+.business figcaption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.business .columns {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.business .left-column {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: auto;
+}
+.business .leftcolumn h2,
+p {
+	margin: 0;
+	padding-top: 10px;
+}
+
+.business .leftcolumn p {
+	color: #636b59;
+}
+.business .rightColumn p {
+	margin: 0;
+	padding: 2px 0;
+}
+.business .rightColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	margin-top: auto;
+	padding-top: 16px;
+	padding-left: 20px;
+}
+
+.business .rating {
+	font-weight: bold;
+	color: #222;
+}
+
+.rightColumn .reviewCount {
+	color: #e16162;
+}
+
+.business h2 {
+	font-size: 16px;
+	padding: 2px 0 20px 0;
+}
+
+.business p {
+	font-size: 14px;
+}
+
+.rightColumn p {
+	color: #e08600;
+}
+
+.reviewCount {
+	color: #e16162;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.business {
+		width: 90%;
+		margin: 10px;
+		padding: 4px;
+	}
+
+	.business img {
+		width: 100%; /*make image full width */
+		height: auto;
+	}
+
+	.business h2 {
+		font-size: 14px; /* Reduce font size on small screens */
+	}
+
+	.business p {
+		font-size: 12px; /* Smaller text on mobile */
+	}
+
+	.business .rating {
+		font-size: 12px; /* Smaller rating text */
+	}
+
+	.business .rightColumn p {
+		padding: 2px;
+	}
+	.business .leftcolumn p {
+		padding: 2px;
+	}
+}
