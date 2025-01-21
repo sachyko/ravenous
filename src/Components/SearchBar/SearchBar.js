@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./SearchBar.module.css";
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
 	//state for search input, location input, and selected sort option
 	const [searchTerm, setSearchTerm] = useState("");
 	const [location, setLocation] = useState("");
@@ -16,11 +16,6 @@ const SearchBar = () => {
 	//Handle changes in the location input
 	const handleLocationChange = (event) => {
 		setLocation(event.target.value);
-	};
-
-	//Define the handleSortChange function to update the sortOption state
-	const handleSortChange = (value) => {
-		setSortOption(value);
 	};
 
 	// Define separate functions for each sort option
@@ -39,10 +34,10 @@ const SearchBar = () => {
 	const handleSearch = (event) => {
 		event.preventDefault(); //Prevent  Prevent the default form action
 
-		//log the search message to the console
-		console.log(
-			`Searching Yelp with ${searchTerm}, ${location}, ${sortOption}`
-		);
+		//call the onsearch prop with the search parameter
+		if (onSearch) {
+			onSearch(searchTerm, location, sortOption);
+		}
 	};
 
 	return (

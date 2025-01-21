@@ -7,16 +7,17 @@ const BusinessList = ({ businesses }) => {
 		<div className={styles.businessList}>
 			{businesses.map((business) => (
 				<Business
-					key={business.name}
+					key={business.id}
 					src={business.src}
 					name={business.name}
 					address={business.address}
 					city={business.city}
 					state={business.state}
-					postalcode={business.postalcode}
+					postalcode={business.postalCode}
 					category={business.category}
 					rating={business.rating}
 					reviewCount={business.reviewCount}
+					website={business.website}
 				/>
 			))}
 		</div>

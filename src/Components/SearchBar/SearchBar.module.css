@@ -8,34 +8,38 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 30rem;
+	height: 35rem;
 	margin-bottom: 60px;
+	width: 100%;
 }
 
 .search h1 {
 	background-color: #e16162;
 	width: 100%;
-	margin: 0%;
+	margin: 0;
 	padding: 5px;
 	font-family: "Mulish", serif;
 	letter-spacing: 8px;
 	font-weight: 900;
 	text-align: center;
+	width: 100%; /* Allow input to fill the available space */
 }
 
 /* location and search bussiness be side by side  */
+
 .input {
 	display: flex;
-	margin-bottom: 50px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
 }
-
 .sortOptions button {
 	padding: 10px 30px;
 	border-radius: 10px;
 	border: none;
 	margin: 40px;
 	cursor: pointer;
-	font-size: 25px;
+	font-size: 1.78rem;
 	color: #004643;
 	text-align: center;
 	font-family: "Oswald", serif;
@@ -45,14 +49,18 @@
 
 .sortOptions {
 	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* gap: 10px; Add space between buttons */
+	margin-bottom: 20px;
 }
 .sortOptions button.active {
 	background-color: #f9bc60; /* Active button background color */
 	color: white; /* Active button text color */
 	border: 2px solid #004643; /* Active button border color */
-	font-weight: bold; /* Bold text for active button */
+	font-weight: bold; /*Bold text for active button */
 }
-
 /* adding hover effect */
 .sortOptions button:hover {
 	background-color: rgba(255, 243, 204, 0.8);
@@ -66,10 +74,12 @@
 }
 
 /* search bar styling */
+
 .searchBar input {
 	margin: 18px;
 	padding-right: 30px;
-	width: 300px;
+	width: 100%; /* Make input take up full width */
+	max-width: 300px; /* Max width to prevent it from getting too wide */
 	height: 40px;
 	border-radius: 3px;
 	border: 2px solid #abd1c6;
@@ -102,6 +112,9 @@
 	font-family: "Oswald";
 	letter-spacing: 2px;
 	font-weight: 800;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .button:hover {
@@ -126,6 +139,7 @@ Mobile size */
 	}
 	.sortOptions {
 		padding-top: 15px;
+		margin-bottom: 50px;
 	}
 	.input {
 		display: flex;
@@ -162,4 +176,7 @@ Table size */
 		padding-top: 10px;
 		margin-top: 40px;
 	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
 }

@@ -1,31 +1,30 @@
 .businessList {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-	grid-gap: 15px;
+	grid-template-columns: repeat(4, 1fr);
 	justify-content: center;
-	margin: 100px auto;
-	width: 200px;
+	margin: auto 80px;
+	grid-gap: 60px;
+
+	/* width: 100%; Use full width */
+	/* Optional, set a max width */
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
 	.businessList {
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 0;
-		max-width: 300px;
+		grid-gap: 1px;
+		margin: 0 auto;
 	}
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
 	.businessList {
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 10px;
 	}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
 	.businessList {
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 15px;
-		width: 500px;
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
