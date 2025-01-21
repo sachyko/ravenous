@@ -15,7 +15,6 @@
 	height: 10rem;
 	border-radius: 8px;
 	object-fit: cover;
-	aspect-ratio: 4 / 3; /* Maintain image aspect ratio */
 }
 
 .business figcaption {
@@ -49,10 +48,8 @@ p {
 }
 
 .address {
-	word-wrap: break-word;
 	padding: 10px 0;
 	font-family: "Brawler";
-	margin-bottom: 5px;
 }
 .addressLink {
 	text-decoration: none;
@@ -79,12 +76,7 @@ p {
 	justify-content: flex-end; /* Align to the right */
 	gap: 5px; /* Space between text and icon */
 	margin: 0;
-	margin: 0;
 	padding: 2px;
-}
-.business .rating {
-	font-weight: bold;
-	color: #222;
 }
 
 .rightColumn .reviewCount {
@@ -93,11 +85,11 @@ p {
 
 .business h2 {
 	font-size: 16px;
-	padding: 2px 0 20px 0;
 }
 
 .business p {
 	font-size: 14px;
+	margin-top: 20px;
 }
 
 .rightColumn p {
@@ -121,21 +113,45 @@ p {
 	}
 
 	.business h2 {
-		font-size: 14px; /* Reduce font size on small screens */
-	}
-
-	.business p {
-		font-size: 12px; /* Smaller text on mobile */
-	}
-
-	.business .rating {
-		font-size: 12px; /* Smaller rating text */
+		font-size: 35px;
 	}
 
 	.business .rightColumn p {
 		padding: 2px;
+		font-size: 25px;
 	}
 	.business .leftcolumn p {
 		padding: 2px;
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.business h2 {
+		font-size: 20px;
+	}
+
+	.business .rightColumn p {
+		padding: 2px;
+		font-size: 15px;
+	}
+	.business .leftcolumn p {
+		padding: 2px;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.business h2 {
+		font-size: 20px;
+	}
+
+	.business .rightColumn p {
+		padding: 2px;
+		font-size: 15px;
+	}
+	.business .leftcolumn p {
+		padding: 2px;
+		font-size: 15px;
 	}
 }
