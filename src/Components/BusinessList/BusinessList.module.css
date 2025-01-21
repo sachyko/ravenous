@@ -2,18 +2,22 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-content: center;
-	margin: auto 80px;
-	grid-gap: 60px;
-
-	/* width: 100%; Use full width */
-	/* Optional, set a max width */
+	margin: 0 100px;
+	grid-gap: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 374px) {
 	.businessList {
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 1px;
-		margin: 0 auto;
+		padding-left: 8px;
+	}
+}
+@media (min-width: 375px) and (max-width: 480px) {
+	.businessList {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1px;
+		padding-left: 18px;
 	}
 }
 

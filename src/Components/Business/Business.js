@@ -30,6 +30,7 @@ const Business = ({
 					{/* Two-column layout */}
 					<div className={styles.columns}>
 						<div className={styles.leftcolumn}>
+							<h2>{name}</h2>
 							<p className={styles.address}>
 								<a
 									href={googleMapsUrl}

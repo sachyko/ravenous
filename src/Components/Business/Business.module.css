@@ -4,10 +4,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 20px;
 	border-radius: 8px;
 	position: relative;
-	margin-top: 5px;
+	margin-top: 3px;
 }
 
 .business img {
@@ -28,83 +27,59 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	/* flex-wrap: wrap; */
 }
-.business .left-column {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: auto;
+
+/* color and font-sizing */
+.leftcolumn h2 {
+	color: #004643;
+	font-size: 25px;
 }
-.business .leftcolumn h2,
-p {
+.rightColumn p {
+	font-size: 17px;
+	color: #e08600;
+	display: flex; /* Use flexbox for alignment */
+	align-items: center; /* Vertically center */
+	justify-content: flex-end; /* Align to the right */
+	gap: 5px; /* Space between text and icon */
 	margin: 0;
-	padding-top: 10px;
 }
-
-.business .leftcolumn p {
-	padding: 2px;
-	margin-right: 20px;
-	font-size: 16px;
-}
-
 .address {
-	padding: 10px 0;
 	font-family: "Brawler";
+	margin: 10px;
+	font-size: 20px;
 }
 .addressLink {
 	text-decoration: none;
-	color: #004643;
+	color: black;
 }
 
 .addressLink:hover {
 	color: #e16162;
 }
 
-.business .rightColumn {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	text-align: right;
-	margin-top: auto;
-	padding-top: 15px;
-	padding-left: 5px;
-}
 /* Updated styles for inline alignment */
-.business .rightColumn p {
-	display: flex; /* Use flexbox for alignment */
-	align-items: center; /* Vertically center */
-	justify-content: flex-end; /* Align to the right */
-	gap: 5px; /* Space between text and icon */
-	margin: 0;
-	padding: 2px;
-}
 
 .rightColumn .reviewCount {
 	color: #e16162;
-}
-
-.business h2 {
-	font-size: 16px;
-}
-
-.business p {
-	font-size: 14px;
-	margin-top: 20px;
-}
-
-.rightColumn p {
-	color: #e08600;
 }
 
 .reviewCount {
 	color: #e16162;
 }
 
+/* alignment */
+.rightColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	margin-top: auto;
+	/* margin-top: ; */
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 	.business {
-		width: 90%;
 		margin: 10px auto;
-		padding: 4px;
 	}
 
 	.business img {
@@ -112,17 +87,16 @@ p {
 		height: auto;
 	}
 
-	.business h2 {
-		font-size: 30px;
+	.leftcolumn h2 {
+		font-size: 20px;
 	}
 
-	.business .rightColumn p {
-		padding: 2px;
-		font-size: 25px;
+	.rightColumn p {
+		font-size: 15px;
 	}
-	.business .leftcolumn p {
-		padding: 2px;
-		font-size: 25px;
+
+	.address {
+		font-size: 18px;
 	}
 }
 
@@ -130,28 +104,10 @@ p {
 	.business h2 {
 		font-size: 20px;
 	}
-
-	.business .rightColumn p {
-		padding: 2px;
-		font-size: 15px;
-	}
-	.business .leftcolumn p {
-		padding: 2px;
-		font-size: 15px;
-	}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
 	.business h2 {
 		font-size: 20px;
-	}
-
-	.business .rightColumn p {
-		padding: 2px;
-		font-size: 15px;
-	}
-	.business .leftcolumn p {
-		padding: 2px;
-		font-size: 15px;
 	}
 }
