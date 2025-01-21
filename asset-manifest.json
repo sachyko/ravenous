@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ravenous/static/css/main.51a73b25.css",
-    "main.js": "/ravenous/static/js/main.fafd903e.js",
+    "main.css": "/ravenous/static/css/main.e77a20ef.css",
+    "main.js": "/ravenous/static/js/main.d2635d93.js",
     "static/js/488.f70a56bd.chunk.js": "/ravenous/static/js/488.f70a56bd.chunk.js",
     "static/media/patrick-tomasso-GXXYkSwndP4-unsplash.jpg": "/ravenous/static/media/patrick-tomasso-GXXYkSwndP4-unsplash.63dc82e7d076a950a60f.jpg",
     "static/media/10cups.jpeg": "/ravenous/static/media/10cups.064e8e6f5028554610e1.jpeg",
@@ -11,12 +11,12 @@
     "static/media/Roastery.jpeg": "/ravenous/static/media/Roastery.b60de423eec6bce17049.jpeg",
     "static/media/Anjin.jpeg": "/ravenous/static/media/Anjin.563736696abadae9b55a.jpeg",
     "index.html": "/ravenous/index.html",
-    "main.51a73b25.css.map": "/ravenous/static/css/main.51a73b25.css.map",
-    "main.fafd903e.js.map": "/ravenous/static/js/main.fafd903e.js.map",
+    "main.e77a20ef.css.map": "/ravenous/static/css/main.e77a20ef.css.map",
+    "main.d2635d93.js.map": "/ravenous/static/js/main.d2635d93.js.map",
     "488.f70a56bd.chunk.js.map": "/ravenous/static/js/488.f70a56bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51a73b25.css",
-    "static/js/main.fafd903e.js"
+    "static/css/main.e77a20ef.css",
+    "static/js/main.d2635d93.js"
   ]
 }
