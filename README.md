@@ -2,6 +2,11 @@
 
 A project from Codecademy
 
+# Current Status
+We are currently working on improving the API connection due to recent changes in Yelp's pricing and access policies. Because Yelp's API is no longer freely accessible for extensive use, we're exploring alternative solutions and optimizing requests to stay within the limits of the free tier (if applicable). This may temporarily affect the search functionality or require users to use their own API key for testing.
+
+
+
 ## Purpose
 
 Ravenous is a restaurant recommendation application built using React, allowing users to search for restaurants based on their location. It retrieves data from the Yelp API and presents it in an easy-to-navigate interface, enabling users to filter restaurant recommendations based on the best match, highest rating, or most reviews.
